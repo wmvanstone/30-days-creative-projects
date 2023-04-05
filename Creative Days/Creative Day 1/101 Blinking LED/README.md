@@ -7,4 +7,4 @@ Equipment: Arduino Uno, breadboard, dip switch, 220R resistors, LEDs
 5.  Print out the state of switches to the Serial Monitor as a 3 digit binary number
 
 ### Possible Solution
-If you want to discover how this can be achieved, click [here](Solution.md)
+[Solution to 101 Blinking LED challenge](Solution.md)

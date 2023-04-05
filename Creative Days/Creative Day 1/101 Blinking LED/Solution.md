@@ -1,8 +1,7 @@
 # Solution to 101 Blinking LED challenge
 Here is one possible solution to the 101 project challenge
 
-
+## Fritzing Diagram
 <p align="center">
-    <img src="30DaysDay01.png" height="300"><br>
-    <i>Disaster strikes as you crash land on an unknown planet</i>
+    <img src="101_Blink_bb.png" height="300">
 </p>

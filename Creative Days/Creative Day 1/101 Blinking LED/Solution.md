@@ -8,4 +8,7 @@ Here is one possible solution to the 101 project challenge
 [101_Blink.ino](101_Blink.ino)
 
 ## Video
-[101_Blink Video](101_Blink Video.mp4)
+[101_Blink_Video.mp4](101_Blink_Video.mp4)
+
+## Picture
+<img src="101_Blink_Picture.jpg" height="300">

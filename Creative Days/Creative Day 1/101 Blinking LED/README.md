@@ -5,3 +5,6 @@ Equipment: Arduino Uno, breadboard, dip switch, 220R resistors, LEDs
 3.  Change to code to vary the frequency of the blink.
 4.  Incorporate the dip switch on pins 9, 10 and 11, with 220Ω pulldown resistors, to change on duration, off duration and whether the LED comes on at all.
 5.  Print out the state of switches to the Serial Monitor as a 3 digit binary number
+
+### Possible Solution
+If you want to discover how this can be achieved, click [here](Solution.md)

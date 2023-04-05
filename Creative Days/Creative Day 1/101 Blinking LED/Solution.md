@@ -6,3 +6,6 @@ Here is one possible solution to the 101 project challenge
 
 ## Code
 [101_Blink.ino](101_Blink.ino)
+
+## Video
+[101_Blink Video](101_Blink Video.mp4)

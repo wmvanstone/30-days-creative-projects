@@ -8,17 +8,17 @@ int Switch3 = 10; // Switch 3 of our DIP switch is attached to pin 10
 int Red = 13;     // Red traffic light on pin 13
 int Amber = 12;   // Amber traffic light on pin 12
 int Green = 11;   // Green traffic light on pin 11
-int Ped_Stop = 7; // Pedestrian stop on pin 7
-int Ped_Go = 6;   // Pedestrian go on pin 6
+int Dont_Walk = 7; // Pedestrian stop on pin 7
+int Walk = 6;   // Pedestrian go on pin 6
 
 void setup()
 {
   pinMode(Red, OUTPUT); // 5 LEDs as outputs
   pinMode(Amber, OUTPUT);
   pinMode(Green, OUTPUT);
-  pinMode(Ped_Stop, OUTPUT);
-  pinMode(Ped_Go, OUTPUT);
-  pinMode(Switch1, INPUT); // Set these switches as input
+  pinMode(Dont_Walk, OUTPUT);
+  pinMode(Walk, OUTPUT);
+  pinMode(Switch1, INPUT); // 3 switches as input
   pinMode(Switch2, INPUT);
   pinMode(Switch3, INPUT);
 }
@@ -28,56 +28,47 @@ void loop(){
   int Sw2=digitalRead(Switch2);
   int Sw3=digitalRead(Switch3);
   int time = 1; // multiplier to change duration of delays
-  // Cycle traffic lights - set delays
+  // Cycle traffic lights
+  // Set delays
   if (Sw1 == HIGH) {
     time = 2;  // switch 1 doubles the delay throughout the code
   }
   // Switch the lights on or off
   if (Sw2 == HIGH) {          // switch 2 controls whether the traffic light system runs at all
     digitalWrite(Red,HIGH);
-    digitalWrite(Ped_Stop,HIGH);
+    digitalWrite(Dont_Walk,HIGH);
+    delay(100 * time); 
     // Operate the pedestrian crossing
     if (Sw3 == HIGH){         // switch 3 determines whether the pedestrian crossing runs
-      digitalWrite(Ped_Go,HIGH);   // switch on green crossing light
-      digitalWrite(Ped_Stop,LOW);  // switch off red crossing light
+      digitalWrite(Walk,HIGH);   // switch on green crossing light
+      digitalWrite(Dont_Walk,LOW);  // switch off red crossing light
       delay(1000 * time);
       // flash green light
-      digitalWrite(Ped_Go,LOW);
+      digitalWrite(Walk,LOW);
       delay(100 * time);
-      digitalWrite(Ped_Go,HIGH);
+      digitalWrite(Walk,HIGH);
       delay(100 * time);
-      digitalWrite(Ped_Go,LOW);
+      digitalWrite(Walk,LOW);
       delay(100 * time);
-      digitalWrite(Ped_Go,HIGH);
-      delay(100 * time);
-      digitalWrite(Ped_Go,LOW);
-      delay(100 * time);
-      digitalWrite(Ped_Go,HIGH);
+      digitalWrite(Walk,HIGH);
       delay(100 * time);
       // end flash of pedestrian crossing light
-      digitalWrite(Ped_Stop,HIGH);
-      digitalWrite(Ped_Go,LOW);
-      delay(200 * time);
+      digitalWrite(Dont_Walk,HIGH);
+      digitalWrite(Walk,LOW);
       // End of pedestrian crossing code
+      delay(100 * time);
     } else {
       delay(1000 * time);
     }
     digitalWrite(Amber,HIGH);
-    delay(100 * time);
     digitalWrite(Red, LOW);
-    delay(500 * time);
+    delay(1000 * time);
     digitalWrite(Green,HIGH);
-    delay(100 * time);
     digitalWrite(Amber,LOW);
     delay(1000 * time);
     digitalWrite(Amber,HIGH);
-    delay(100 * time);
     digitalWrite(Green,LOW);
     // flash amber light
-    digitalWrite(Amber,LOW);
-    delay(100 * time);
-    digitalWrite(Amber,HIGH);
-    delay(100 * time);
     digitalWrite(Amber,LOW);
     delay(100 * time);
     digitalWrite(Amber,HIGH);
@@ -88,10 +79,9 @@ void loop(){
     delay(100 * time);    
     // end flash of amber light
     digitalWrite(Red, HIGH);
-    delay(100 * time);
     digitalWrite(Amber,LOW);
   } else { // switch off the lights if switch 2 is switched off
     digitalWrite(Red,LOW);
-    digitalWrite(Ped_Stop,LOW);
+    digitalWrite(Dont_Walk,LOW);
   }
 }

@@ -27,26 +27,38 @@ void loop(){
   int Sw1=digitalRead(Switch1);
   int Sw2=digitalRead(Switch2);
   int Sw3=digitalRead(Switch3);
-  int time = 1;
-  if (Sw1) time = 2;  // switch 1 doubles the delay throughout the code
-
-  if (Sw2) {          // switch 2 controls whether the traffic light system runs at all
-
+  int time = 1; // multiplier to change duration of delays
+  // Cycle traffic lights - set delays
+  if (Sw1 == HIGH) {
+    time = 2;  // switch 1 doubles the delay throughout the code
+  }
+  // Switch the lights on or off
+  if (Sw2 == HIGH) {          // switch 2 controls whether the traffic light system runs at all
     digitalWrite(Red,HIGH);
     digitalWrite(Ped_Stop,HIGH);
-    if (Sw3){         // switch 3 determines whether the pedestrian crossing runs
+    // Operate the pedestrian crossing
+    if (Sw3 == HIGH){         // switch 3 determines whether the pedestrian crossing runs
       digitalWrite(Ped_Go,HIGH);   // switch on green crossing light
       digitalWrite(Ped_Stop,LOW);  // switch off red crossing light
-      delay(1000*time);
-      for (int i = 0; i < 6; i++){ // flash green crossing light
-        digitalWrite(Ped_Go,LOW);
-        delay(100 * time);
-        digitalWrite(Ped_Go,HIGH);
-        delay(100 * time);
-      }
+      delay(1000 * time);
+      // flash green light
+      digitalWrite(Ped_Go,LOW);
+      delay(100 * time);
+      digitalWrite(Ped_Go,HIGH);
+      delay(100 * time);
+      digitalWrite(Ped_Go,LOW);
+      delay(100 * time);
+      digitalWrite(Ped_Go,HIGH);
+      delay(100 * time);
+      digitalWrite(Ped_Go,LOW);
+      delay(100 * time);
+      digitalWrite(Ped_Go,HIGH);
+      delay(100 * time);
+      // end flash of pedestrian crossing light
       digitalWrite(Ped_Stop,HIGH);
       digitalWrite(Ped_Go,LOW);
       delay(200 * time);
+      // End of pedestrian crossing code
     } else {
       delay(1000 * time);
     }
@@ -61,16 +73,24 @@ void loop(){
     digitalWrite(Amber,HIGH);
     delay(100 * time);
     digitalWrite(Green,LOW);
-    for (int i = 0; i < 6; i++){
-      digitalWrite(Amber,LOW);
-      delay(100 * time);
-      digitalWrite(Amber,HIGH);
-      delay(100 * time);
-    }
+    // flash amber light
+    digitalWrite(Amber,LOW);
+    delay(100 * time);
+    digitalWrite(Amber,HIGH);
+    delay(100 * time);
+    digitalWrite(Amber,LOW);
+    delay(100 * time);
+    digitalWrite(Amber,HIGH);
+    delay(100 * time);
+    digitalWrite(Amber,LOW);
+    delay(100 * time);
+    digitalWrite(Amber,HIGH);
+    delay(100 * time);    
+    // end flash of amber light
     digitalWrite(Red, HIGH);
     delay(100 * time);
     digitalWrite(Amber,LOW);
-  } else {
+  } else { // switch off the lights if switch 2 is switched off
     digitalWrite(Red,LOW);
     digitalWrite(Ped_Stop,LOW);
   }

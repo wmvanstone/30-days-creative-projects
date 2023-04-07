@@ -1,4 +1,4 @@
-# Solution to 101 Blinking LED challenge
+# Solution to 101 Blinking LED Challenge
 Here is one possible solution to the 101 project challenge
 
 ## Fritzing Diagram
@@ -8,7 +8,6 @@ Here is one possible solution to the 101 project challenge
 [101_Blink.ino](101_Blink.ino)
 
 ## Video
-[101_Blink_Video.mp4](101_Blink_Video.mp4)<br>
 [YouTube](https://youtu.be/21zLZakEC4E)
 
 ## Picture

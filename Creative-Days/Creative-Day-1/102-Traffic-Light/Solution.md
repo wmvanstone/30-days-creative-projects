@@ -8,7 +8,6 @@ Here is one possible solution to the 101 project challenge
 [102_Traffic_Light.ino](102_Traffic_Light.ino)
 
 ## Video
-[102_Traffic_Light_Video.mp4](102_Traffic_Light.mp4)<br>
 [YouTube](https://youtu.be/LEXjwdFOQmw)
 
 ## Picture

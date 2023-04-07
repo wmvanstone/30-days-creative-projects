@@ -1,15 +1,15 @@
-# Solution to 101 Blinking LED challenge
+# Solution to 102 Traffic Light Challenge
 Here is one possible solution to the 101 project challenge
 
 ## Fritzing Diagram
-<img src="101_Blink_bb.png" height="300">
+<img src="102_Traffic_Light_bb.png" height="300">
 
 ## Code
-[101_Blink.ino](101_Blink.ino)
+[102_Traffic_Light.ino](102_Traffic_Light.ino)
 
 ## Video
-[101_Blink_Video.mp4](101_Blink_Video.mp4)<br>
-[YouTube](https://youtu.be/21zLZakEC4E)
+[102_Traffic_Light_Video.mp4](102_Traffic_Light.mp4)<br>
+[YouTube](https://youtu.be/LEXjwdFOQmw)
 
 ## Picture
-<img src="101_Blink_Picture.jpg" height="300">
+<img src="102_Traffic_Light_Picture.jpg" height="300">

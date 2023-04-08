@@ -1,5 +1,5 @@
 # Solution to 102 Traffic Light Challenge
-Here is one possible solution to the 101 project challenge
+Here is one possible solution to the 102 project challenge
 
 ## Fritzing Diagram
 <img src="102-Traffic-Light_bb.png" height="300">

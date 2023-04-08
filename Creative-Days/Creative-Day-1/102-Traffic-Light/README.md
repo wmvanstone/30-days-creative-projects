@@ -1,11 +1,16 @@
 # 102 Traffic Light
-Equipment: HERO board, breadboard, 3-pole dip switch, 5 x 220Ω resistors, 3 x 10KΩ resistors, 2 x red LEDs, 1 x yellow LED, 2 x green LEDs, jumper cables
+
+## Equipment: 
+
+HERO board, breadboard, 3-pole dip switch, 5 x 220Ω resistors, 3 x 10KΩ resistors, 2 x red LEDs, 1 x yellow LED, 2 x green LEDs, jumper cables
+
+## Instructions:
 
 1. Use three LEDs to make a simple traffic light. The cycle of lights should be:
     1. Green on, delay, then off
     2. Amber, flashing then off
     3. Red on, delay, then off
-    4. Amber on, delay, then off 
+    4. Amber on, delay, then off
 
 2. Use the first switch of the DIP switch to control the speed of the cycle of the lights - Switch off = fast cycle, Switch on = slower cycle (delay is doubled). 
 

@@ -11,3 +11,7 @@ Use the DIP switch to increment a binary counter displayed on multiple LEDs. Eac
 When you use the DIP switch as a binary counter, giving you 8 numbers, you can change the inputs read from the switches into a denary number (total) using this statement: 
 
 int total = digitalRead(Switch3)*1 + digitalRead(Switch2)*2 + digitalRead(Switch1)*4;
+
+### Solution
+
+If you want to discover how we solved this challenge, click [here](Solution)

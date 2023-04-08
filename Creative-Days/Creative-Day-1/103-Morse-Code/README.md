@@ -14,3 +14,7 @@ Here are the rules of writing Morse Code:
 3.  The gap between dots or dashes within a letter is 1 time unit
 4.  The gap between letters is 3 time units
 5.  The gap between words is six time units
+
+### Solution
+
+If you want to discover how we solved this challenge, click [here](Solution)

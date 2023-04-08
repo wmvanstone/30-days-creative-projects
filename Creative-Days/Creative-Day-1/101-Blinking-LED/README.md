@@ -10,3 +10,7 @@ Equipment: HERO board, breadboard, 3-pole dip switch, 1 x 220Ω resistor, 3 x 1
 You may find it helpful to use the DIP switch as a binary counter, giving you 8 numbers which can be used to change the duration of the blink in this project. To change the inputs read from the switches into a denary number (total), you can use this statement: 
 
 int total = digitalRead(Switch3)*1 + digitalRead(Switch2)*2 + digitalRead(Switch1)*4;
+
+### Solution
+
+If you want to discover how we solved this challenge, click [here](Solution)

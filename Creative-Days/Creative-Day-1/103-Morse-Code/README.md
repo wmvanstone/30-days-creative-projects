@@ -1,18 +1,16 @@
-# 102 Traffic Light
-Equipment: HERO board, breadboard, 3-pole dip switch, 5 x 220Ω resistors, 3 x 10KΩ resistors, 2 x red LEDs, 1 x yellow LED, 2 x green LEDs, jumper cables
+# 103 Morse Code
+Equipment: HERO board, breadboard, 3-pole dip switch, 1 x 220Ω resistor, 3 x 10KΩ resistors, LED, jumper cables
+1.  This starts with the classic Arduino beginner project, download the Blink code from Examples | 01.Basics. 
+2.  Use the breadboard and an LED on pin 13, with a protective 220R resistor, to make it blink on and off using the Blink example code. 
+3.  Change to code to use the LED to blink a message in Morse code. 
+4.  Incorporate the dip switch on pins 9, 10 and 11, with 10KΩ pulldown resistors and use the DIP switch to select different messages
 
-1. Use three LEDs to make a simple traffic light. The cycle of lights should be:
-    1. Green on, delay, then off
-    2. Amber, flashing then off
-    3. Red on, delay, then off
-    4. Amber on, delay, then off 
+### Helpful Hints
+Here is a handy [Morse Code Look Up Chart](https://www.codebug.org.uk/learn/step/540/morse-code-alphabet/)
 
-2. Use the first switch of the DIP switch to control the speed of the cycle of the lights - Switch off = fast cycle, Switch on = slower cycle (delay is doubled). 
-
-3. Use the second switch of the DIP switch to turn the traffic lights on or off. The lights should turn off after a completed cycle and not turn back on until the second switch is turned on.
-
-4. Use the third switch to include the pedestrian crossing lights into the cycle. The cycle of the lights should now be:
-    1. Green on, delay, then off. Walk (green LED) off, Dont_Walk (red LED) on.
-    2. Amber, flashing then off
-    3. Red on, Dont_Walk off, Walk flashes on and off, then Red off, Dont_Walk on.
-    4. Amber on, delay, then off 
+Here are the rules of writing Morse Code:
+1.  A dot is 1 time unit
+2.  A dash is 3 time units
+3.  The gap between dots or dashes within a letter is 1 time unit
+4.  The gap between letters is 3 time units
+5.  The gap between words is six time units

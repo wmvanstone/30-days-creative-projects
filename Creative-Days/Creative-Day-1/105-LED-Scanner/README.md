@@ -9,4 +9,4 @@ Use a series of LEDs to create a light "scanner" effect, like [KITT from Knight 
 
 ### Solution
 
-If you want to discover how we solved this challenge, click [here](Solution)
+If you want to discover how we solved this challenge, click [here](Solution.md)

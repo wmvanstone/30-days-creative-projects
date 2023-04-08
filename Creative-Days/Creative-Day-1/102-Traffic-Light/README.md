@@ -24,4 +24,4 @@ HERO board, breadboard, 3-pole dip switch, 5 x 220Ω resistors, 3 x 10KΩ resi
 
 ### Solution
 
-If you want to discover how we solved this challenge, click [here](Solution)
+If you want to discover how we solved this challenge, click [here](Solution.md)

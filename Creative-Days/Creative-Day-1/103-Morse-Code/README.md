@@ -17,4 +17,4 @@ Here are the rules of writing Morse Code:
 
 ### Solution
 
-If you want to discover how we solved this challenge, click [here](Solution)
+If you want to discover how we solved this challenge, click [here](Solution.md)

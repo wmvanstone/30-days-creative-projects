@@ -13,4 +13,4 @@ int total = digitalRead(Switch3)*1 + digitalRead(Switch2)*2 + digitalRead(Switch
 
 ### Solution
 
-If you want to discover how we solved this challenge, click [here](Solution)
+If you want to discover how we solved this challenge, click [here](Solution.md)

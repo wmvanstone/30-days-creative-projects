@@ -21,3 +21,7 @@ HERO board, breadboard, 3-pole dip switch, 5 x 220Ω resistors, 3 x 10KΩ resi
     2. Amber, flashing then off
     3. Red on, Dont_Walk off, Walk flashes on and off, then Red off, Dont_Walk on.
     4. Amber on, delay, then off 
+
+### Solution
+
+If you want to discover how we solved this challenge, click [here](Solution)

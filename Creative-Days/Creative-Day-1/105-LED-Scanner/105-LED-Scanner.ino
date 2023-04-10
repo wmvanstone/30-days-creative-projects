@@ -1,4 +1,4 @@
-/* Project 104 - Binary LED counter, 
+/* Project 105 - LED Scanner, 
 enter lighting options using the dip switch
 show patterns on the LEDs
 */

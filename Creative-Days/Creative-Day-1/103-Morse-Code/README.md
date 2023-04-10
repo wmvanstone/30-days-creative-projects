@@ -6,7 +6,7 @@ Equipment: HERO board, breadboard, 3-pole dip switch, 1 x 220Ω resistor, 3 x 1
 4.  Incorporate the dip switch on pins 9, 10 and 11, with 10KΩ pulldown resistors and use the DIP switch to select different messages
 
 ### Helpful Hints
-Here is a handy [Morse Code Look Up Chart](https://www.codebug.org.uk/learn/step/540/morse-code-alphabet/)
+Here is a handy [Morse Code Look Up Chart](https://www.codebug.org.uk/learn/step/540/morse-code-alphabet/), and you can use [this website](https://cryptii.com/pipes/morse-code-translator) to translate a message into Morse Code, and back again.
 
 Here are the rules of writing Morse Code:
 1.  A dot is 1 time unit
@@ -17,4 +17,4 @@ Here are the rules of writing Morse Code:
 
 ### Solution
 
-If you want to discover how we solved this challenge, click [here](Solution)
+If you want to discover how we solved this challenge, click [here](Solution.md)

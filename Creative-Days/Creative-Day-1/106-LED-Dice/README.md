@@ -18,5 +18,5 @@ Create a digital dice as in version1, but this time using 7 LEDs representing th
 
 If you want to discover how we solved this challenge, click on the links below:
 
-[Solution for Version 1](Solution.md)
+[Solution for Version 1](Solution.md) <br>
 [Solution for Version 2](Solution-Version2.md)

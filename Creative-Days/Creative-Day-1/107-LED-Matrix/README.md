@@ -12,6 +12,6 @@ Cycle through the patterns when all switches are turned off.
 
 ### Solution
 
-If you want to discover how we solved this challenge, click on the links below:
+If you want to discover how we solved this challenge, click on the link below:
 
 [Solution](Solution.md) <br>

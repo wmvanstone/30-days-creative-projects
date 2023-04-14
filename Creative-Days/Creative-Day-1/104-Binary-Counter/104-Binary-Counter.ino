@@ -2,26 +2,26 @@
 enter the binary value using a DIP Switch, between 000 and 111
 write out the denary on the LEDS
 */
-int Switch1 = 2;     // Switch 1 of our DIP switch is attached to pin 9
-int Switch2 = 3;     // Switch 2 of our DIP switch is attached to pin 10
-int Switch3 = 4;     // Switch 3 of our DIP switch is attached to pin 11
-int LED7 = 12;       // 7
-int LED6 = 11;       // 6
-int LED5 = 10;       // 5
-int LED4 = 9;        // 4
-int LED3 = 8;        // 3
-int LED2 = 7;        // 2
+int Switch1 = 2;     // Switch 1 of our DIP switch is attached to pin 2
+int Switch2 = 3;     // Switch 2 of our DIP switch is attached to pin 3
+int Switch3 = 4;     // Switch 3 of our DIP switch is attached to pin 4
 int LED1 = 6;        // 1
+int LED2 = 7;        // 2
+int LED3 = 8;        // 3
+int LED4 = 9;        // 4
+int LED5 = 10;       // 5
+int LED6 = 11;       // 6
+int LED7 = 12;       // 7
 
 void setup()
 {
-  pinMode(LED7, OUTPUT); // 7 LEDs as outputs
-  pinMode(LED6, OUTPUT);
-  pinMode(LED5, OUTPUT);
-  pinMode(LED4, OUTPUT);
-  pinMode(LED3, OUTPUT);
+  pinMode(LED1, OUTPUT); // 7 LEDs as outputs
   pinMode(LED2, OUTPUT);
-  pinMode(LED1, OUTPUT);
+  pinMode(LED3, OUTPUT);
+  pinMode(LED4, OUTPUT);
+  pinMode(LED5, OUTPUT);
+  pinMode(LED6, OUTPUT);
+  pinMode(LED7, OUTPUT); 
   pinMode(Switch1, INPUT); // 3 switches as input
   pinMode(Switch2, INPUT);
   pinMode(Switch3, INPUT);

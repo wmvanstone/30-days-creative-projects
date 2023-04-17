@@ -62,7 +62,7 @@ void loop(){
     digitalWrite(LED8,LOW);
     delay(100);
   }
-  if (Sw2 == HIGH) {  // scan left to right
+  if (Sw2 == HIGH) {  // scan right to left
     digitalWrite(LED8,HIGH);
     delay(100);
     digitalWrite(LED7,HIGH);
@@ -91,7 +91,7 @@ void loop(){
     digitalWrite(LED1,LOW);
     delay(100);
   }
-  if (Sw3 == HIGH) {  // scan left to right
+  if (Sw3 == HIGH) {  // scan to center and back
     digitalWrite(LED8,HIGH);
     digitalWrite(LED1,HIGH);
     delay(100);

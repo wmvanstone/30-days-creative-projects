@@ -12,6 +12,8 @@ void setup()
   pinMode(Switch1, INPUT); // Set these switches as input
   pinMode(Switch2, INPUT);
   pinMode(Switch3, INPUT);
+
+  // This sets up the serial monitor so that we can see the reading of the DIP Switch, and is optional
   Serial.begin(9600);
 }
 
@@ -19,11 +21,16 @@ void loop(){
   int Sw1=digitalRead(Switch1);
   int Sw2=digitalRead(Switch2);
   int Sw3=digitalRead(Switch3);
+
+  // This prints out the state of the DIP switch to the serial monitor. It is not essential for this project
   Serial.print(Sw1);
   Serial.print(Sw2);
   Serial.println(Sw3);
-  
-  int total = digitalRead(Switch3)*1 + digitalRead(Switch2)*2 + digitalRead(Switch1)*4; // calculate binary input
+
+  /* total variable is only used in this function, so does not need to be defined at the start of this program
+  The formula will calculate denary value from the binary value of the DIP switches. 
+  See https://www.bbc.co.uk/bitesize/guides/z6qqmsg/revision/2 if you want to find out more */  
+  int total = digitalRead(Switch3)*1 + digitalRead(Switch2)*2 + digitalRead(Switch1)*4;
   
   // Make the speed of flashing proportional to total, 
   if (total == 0) {

@@ -2,6 +2,7 @@
 Here is one possible solution to the 105 project challenge
 
 ## Fritzing Diagram
+<i>[(Click here for full size image)](105-LED-Scanner_bb.png)</i><br>
 <img src="105-LED-Scanner_bb.png" height="300">
 
 ## Code

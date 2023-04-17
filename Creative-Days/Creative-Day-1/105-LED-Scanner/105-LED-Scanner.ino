@@ -2,37 +2,43 @@
 enter lighting options using the dip switch
 show patterns on the LEDs
 */
+
+// These variables are used to show how the devices are connected to the HERO pins
 int Switch1 = 2;     // Switch 1 of our DIP switch is attached to pin 9
 int Switch2 = 3;     // Switch 2 of our DIP switch is attached to pin 10
 int Switch3 = 4;     // Switch 3 of our DIP switch is attached to pin 11
-int LED8 = 13;       // 8
-int LED7 = 12;       // 7
-int LED6 = 11;       // 6
-int LED5 = 10;       // 5
-int LED4 = 9;        // 4
-int LED3 = 8;        // 3
-int LED2 = 7;        // 2
 int LED1 = 6;        // 1
+int LED2 = 7;        // 2
+int LED3 = 8;        // 3
+int LED4 = 9;        // 4
+int LED5 = 10;       // 5
+int LED6 = 11;       // 6
+int LED7 = 12;       // 7
+int LED8 = 13;       // 8
 
 void setup()
 {
-  pinMode(LED8, OUTPUT); // 8 LEDs as outputs
-  pinMode(LED7, OUTPUT);
-  pinMode(LED6, OUTPUT);
-  pinMode(LED5, OUTPUT);
-  pinMode(LED4, OUTPUT);
-  pinMode(LED3, OUTPUT);
-  pinMode(LED2, OUTPUT);
-  pinMode(LED1, OUTPUT);
   pinMode(Switch1, INPUT); // 3 switches as input
   pinMode(Switch2, INPUT);
   pinMode(Switch3, INPUT);
+  
+  pinMode(LED1, OUTPUT); // 8 LEDs as outputs
+  pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
+  pinMode(LED4, OUTPUT);
+  pinMode(LED5, OUTPUT);
+  pinMode(LED6, OUTPUT);
+  pinMode(LED7, OUTPUT);
+  pinMode(LED8, OUTPUT); 
 }
 
 void loop(){
-  int Sw1=digitalRead(Switch1);
+
+  // these variables are only used in this function, so do not need to be defined at the start of this program
+  int Sw1=digitalRead(Switch1); 
   int Sw2=digitalRead(Switch2);
   int Sw3=digitalRead(Switch3);
+  
   if (Sw1 == HIGH) {  // scan left to right
     digitalWrite(LED1,HIGH);
     delay(100);

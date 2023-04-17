@@ -2,6 +2,7 @@
 Here is one possible solution to the 103 project challenge
 
 ## Fritzing Diagram
+<i>[(Click here for full size image)](103-Morse-Code_bb.png)</i><br>
 <img src="103-Morse-Code_bb.png" height="300">
 
 ## Code

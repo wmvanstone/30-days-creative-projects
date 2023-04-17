@@ -2,7 +2,7 @@
 This creates a countdown timer with the 6 LEDs as a countdown display, 
 and another to flash when the countdown time has been reached. 
 
-Use the first 2 DIP switches to select the time period to count – 
+The first 2 DIP switches are used to select the time period to count – 
 there are 4 options - and the third switch will set each interval to  
 seconds or minutes. You can see the time chosen for each option in the code below
 expressed in milliseconds.
@@ -12,6 +12,9 @@ to light up in sequence.
 */
 
 // constants won't change. Used here to set a pin number:
+const int Switch1 = 2;  // Link the DIP Switch leads to their relevant pins
+const int Switch2 = 3;
+const int Switch3 = 4;
 const int LED1 = 6; // Link the LEDs on the breadboard with their relevant pins
 const int LED2 = 7; // Assuming they are sequential in number, in this case, 6 to 12
 const int LED3 = 8;
@@ -19,9 +22,6 @@ const int LED4 = 9;
 const int LED5 = 10;
 const int LED6 = 11;
 const int LED7 = 12;
-const int Switch1 = 2;  // Link the DIP Switch leads to their relevant pins
-const int Switch2 = 3;
-const int Switch3 = 4;
 
 // These are the options (based on the binary value of the DIP switch) with their countdown values
 const unsigned long Option0TotalTime = 5000;    //  5 seconds
@@ -98,18 +98,15 @@ void setup() {
     timerInterval = long(Option7TotalTime/noLEDs) ; 
   }
 
-  /* These variables can be printed out on the serial monitor
-  Serial.begin(9600); 
+  // These variables can be printed out on the serial monitor - this is optional
+  Serial.begin(9600); // We set up communication with the Serial monitor
   Serial.print(Sw3);
   Serial.print(Sw2);
-  Serial.println(Sw1);
-
+  Serial.println(Sw1); // println forces a new line
   Serial.print("timerOption = ");
   Serial.println(timerOption);
   Serial.print("timerInterval = ");
   Serial.println(timerInterval);
-  */
-
 }
 
 void loop() {

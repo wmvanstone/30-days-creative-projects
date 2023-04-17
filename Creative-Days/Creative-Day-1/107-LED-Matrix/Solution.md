@@ -2,6 +2,7 @@
 Here is one possible solution to this project challenge
 
 ## Fritzing Diagram
+<i>[(Click here for full size image)](107-LED-Matrix_bb.png)</i><br>
 <img src="107-LED-Matrix_bb.png" height="300">
 
 ## Code

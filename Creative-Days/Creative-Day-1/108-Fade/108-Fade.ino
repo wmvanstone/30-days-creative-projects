@@ -13,14 +13,20 @@
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/Fade
 */
 
+// These variables are used to show how the devices are connected to the HERO pins
 int led1 = 3;         // the PWM pins attached to LEDs
 int led2 = 5; 
 int led3 = 6; 
 int led4 = 9; 
 int led5 = 10; 
 int led6 = 11; 
-int brightness = 0;  // how bright the LED is
-int fadeAmount = 5;  // how many points to fade the LED by
+
+// brightness to determine how bright the LED is. It is initially set to zero
+int brightness = 0; 
+
+/* fadeAmount sets how many points to fade the LED by. This is only used in the loop() function
+but is located here in the code to allow it to be easily found and changed as desired. */
+int fadeAmount = 5;  
 
 // the setup routine runs once when you press reset:
 void setup() {

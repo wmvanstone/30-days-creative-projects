@@ -2,11 +2,16 @@
 this now incorporates a DIP Switch to control the messages,
 1 = SOS, 2 = TTT, 3 = HELP, which each play in order if they are all on
 */
+
+// These variables are used to show how the devices are connected to the HERO pins
 int Switch1 = 9;      // Switch 1 of our DIP switch is attached to pin 9
 int Switch2 = 10;     // Switch 2 of our DIP switch is attached to pin 10
 int Switch3 = 11;     // Switch 3 of our DIP switch is attached to pin 11
 int LED = 13;         // Flashing LED on pin 13
-int dotlength = 200;  // length of a dot in milli seconds, the time unit
+
+/* This variable is only used in the loop() function, but is easy to find and change when it
+is at the start of the program */
+int dotlength = 200;  // length of a dot in milliseconds, the time unit
 
 void setup()
 {
@@ -20,6 +25,7 @@ void loop(){
   int Sw1=digitalRead(Switch1);
   int Sw2=digitalRead(Switch2);
   int Sw3=digitalRead(Switch3);
+  
   // SOS message
   if (Sw1 == HIGH) {   // .../---/... = SOS
     // S

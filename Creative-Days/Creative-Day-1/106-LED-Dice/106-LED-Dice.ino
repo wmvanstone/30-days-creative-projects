@@ -1,9 +1,7 @@
 // Project 106 - Binary LED counter, 6 LEDs in a line
 
+// These variables are used to show how the devices are connected to the HERO pins
 int Switch1 = 2;     // Switch 1 of our DIP switch is attached to pin 2
-
-int Sw1LastState = 0; //Set the state of Switch 1 to OFF, or LOW
-
 int LED1 = 6;        // 1
 int LED2 = 7;        // 2
 int LED3 = 8;        // 3
@@ -11,6 +9,8 @@ int LED4 = 9;        // 4
 int LED5 = 10;       // 5
 int LED6 = 11;       // 6
 
+// This variable is used in more than one function
+int Sw1LastState = 0; //Set the state of Switch 1 to OFF, or LOW
 
 void setup() {
   pinMode(LED1, OUTPUT); // 6 LEDs as outputs
@@ -34,6 +34,8 @@ void setup() {
 }
 
 void loop() {
+
+  // This variable is only used in this function, so is defined here
   int Sw1=digitalRead(Switch1);
 
   if (Sw1 != Sw1LastState) {  // The switch has changed state

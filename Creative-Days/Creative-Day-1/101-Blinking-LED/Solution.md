@@ -2,6 +2,7 @@
 Here is one possible solution to the 101 project challenge
 
 ## Fritzing Diagram
+<i>[(Click here for full size image)](101-Blink_bb.png)</i><br>
 <img src="101-Blink_bb.png" height="300">
 
 ## Code

@@ -2,6 +2,7 @@
 Here is one possible solution to the 102 project challenge
 
 ## Fritzing Diagram
+<i>[(Click here for full size image)](102-Traffic-Light_bb.png)</i><br>
 <img src="102-Traffic-Light_bb.png" height="300">
 
 ## Code

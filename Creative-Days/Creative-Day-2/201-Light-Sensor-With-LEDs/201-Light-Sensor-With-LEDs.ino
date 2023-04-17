@@ -3,7 +3,7 @@ Use a photoresistor to read the light level and use the LEDs to indicate whether
 Calibrate the sensor so the ambient light level illuminates 1 LED and maximum illuminates 10 LEDs. 
 */
 
-// Link the components with their HERO pins
+// These variables are used to show how the devices are connected to the HERO pins
 int sensorPin = A0; // select the "analog zero" input pin for probing the photoresistor
 int LED1 = 2;
 int LED2 = 3;
@@ -16,15 +16,28 @@ int LED8 = 9;
 int LED9 = 10;
 int LED10 = 11;
 
-int sensorValue = 0; // variable thatwe'll use to store the value reading from the sensor
-int sensorHighValue = 1010; // This is the highest reading when light is shone on sensor
-int sensorLowValue = 668; // This is the lowest reading with the ambient light conditions
+// These variables must be set to zero before the loop() function is run
+int sensorValue = 0; // variable that we'll use to store the value reading from the sensor
 int LEDinterval = 0; // Initialize the LED interval
+
+/* These two values must be input by the programmer and will vary according to your ambient
+light conditions. When the program is uploaded to the HERO board, you must select the serial
+monitor and read the sensor value that is printed to the screen. Take this value and copy it below 
+for the sensorLowValue
+Next, take a torch and shine it as close as you can to the photoresistor. Read the new value on
+the serial monitor and copy it below for the sensorHighValue.
+This is used to callibrate your project for your current light conditions.
+*/
+int sensorLowValue = 668; // This is the lowest reading with the ambient light conditions
+int sensorHighValue = 1010; // This is the highest reading when light is shone on sensor
 
 void setup() {
 
-  Serial.begin(9600);
+  Serial.begin(9600); // This is used to set up the serial monitor
 
+  /* Use the high and low light level values, along with the number of LEDs to determine how much light
+  should be associated with each LED before switching on the next one.
+  */
   int sensorRange = sensorHighValue - sensorLowValue; 
   LEDinterval = int(sensorRange/10); // This is the range expected on the sensor divided by the number of LEDs
 
@@ -45,7 +58,7 @@ void setup() {
 }
 
 void loop() {
-  // Read the analog sensor value and send it to serial
+  // Read the analog sensor value and send it to serial monitor
   sensorValue = analogRead(sensorPin);
   
   /*Read the analog sensor value and send it to the serial monitor and make a note of

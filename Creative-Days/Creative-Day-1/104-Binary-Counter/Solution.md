@@ -2,6 +2,7 @@
 Here is one possible solution to the 104 project challenge
 
 ## Fritzing Diagram
+<i>[(Click here for full size image)](104-Binary-Counter_bb.png)</i><br>
 <img src="104-Binary-Counter_bb.png" height="300">
 
 ## Code

@@ -2,6 +2,7 @@
 Here is one possible solution to this project challenge
 
 ## Fritzing Diagram
+<i>[(Click here for full size image)](201-Light-Sensor-With-LEDs_bb.png)</i><br>
 <img src="201-Light-Sensor-With-LEDs_bb.png" height="300">
 
 ## Code

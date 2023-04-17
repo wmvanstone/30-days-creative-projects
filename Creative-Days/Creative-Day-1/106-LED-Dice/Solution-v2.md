@@ -2,6 +2,7 @@
 Here is one possible solution to the 106 project challenge
 
 ## Fritzing Diagram
+<i>[(Click here for full size image)](106-LED-Dice-v2_bb.png)</i><br>
 <img src="106-LED-Dice-v2_bb.png" height="300">
 
 ## Code

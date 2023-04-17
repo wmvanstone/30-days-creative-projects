@@ -28,6 +28,11 @@
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/BlinkWithoutDelay
 */
 
+/* Note that in this example code, const int is used to set the pins of the HERO board.
+It is actually better practice to do this, as it makes it clear that they are not expected to
+change in the program. Just using int as they do in the 30 days course still works and is
+simpler, but feel free to adopt the better practice if you want to in future! */
+
 // constants won't change. Used here to set a pin number:
 const int ledPin = LED_BUILTIN;  // the number of the LED pin
 

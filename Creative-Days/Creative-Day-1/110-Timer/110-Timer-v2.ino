@@ -2,7 +2,7 @@
 This creates a countdown timer with the 6 LEDs as a countdown display, 
 and another to flash when the countdown time has been reached. 
 
-Use the first 2 DIP switches to select the time period to count – 
+The first 2 DIP switches are used to select the time period to count – 
 there are 4 options - and the third button will set each interval to  
 seconds or minutes. You can see in the code that the options chosen in this
 program give an interval between the LEDs of 1,2,3 or 4 seconds, or 1,2,3 or 4 minutes.
@@ -12,7 +12,9 @@ also cause the built-in LED will flash every second.
 */
 
 // constants won't change. Used here to set a pin number:
-const int ledPin = LED_BUILTIN;  // the number of the Built in LED pin
+const int Switch1 = 2;  // Link the DIP Switch leads to their relevant pins
+const int Switch2 = 3;
+const int Switch3 = 4; 
 const int LED1 = 6; // Link the LEDs on the breadboard with their relevant pins
 const int LED2 = 7; // Assuming they are sequential in number, in this case, 6 to 12
 const int LED3 = 8;
@@ -20,9 +22,7 @@ const int LED4 = 9;
 const int LED5 = 10;
 const int LED6 = 11;
 const int LED7 = 12;
-const int Switch1 = 2;  // Link the DIP Switch leads to their relevant pins
-const int Switch2 = 3;
-const int Switch3 = 4; 
+const int ledPin = LED_BUILTIN;  // the number of the Built in LED pin
 
 // Variables will change:
 int ledState = LOW;  // ledState used to set the LED
@@ -30,9 +30,9 @@ unsigned long timerInterval = 0; // timerInterval is used to hold the time betwe
 
 // Generally, you should use "unsigned long" for variables that hold time
 // The value will quickly become too large for an int to store
-unsigned long previousMillis = 0;  // will store last time Built-in LED was updated
-unsigned long previousTimeMillis = 0;  // will store last time a colored LED was updated
-int LEDno = LED1; // Stores the next LED to be changed
+unsigned long previousMillis = 0;       // will store last time Built-in LED was updated
+unsigned long previousTimeMillis = 0;   // will store last time a colored LED was updated
+int LEDno = LED1;                       // Stores the next LED to be changed
 
 // constants won't change: The interval is 1 second
 const long interval = 1000;  // interval at which to blink the built-in LED (milliseconds)
@@ -40,9 +40,8 @@ const long interval = 1000;  // interval at which to blink the built-in LED (mil
 void setup() {
 
   /* You can set up the serial monitor here is you want to track what is going on with
-  variables later on in this code. You learn about the Serial Monitor on Day 6
+  variables later on in this code. You learn about the Serial Monitor on Day 6 */
   Serial.begin(9600); 
-  */
 
   // set these digital pins as inputs:
   pinMode(Switch1, INPUT);
@@ -84,12 +83,11 @@ void setup() {
     timerInterval = (timerOption - 3) * 60000 ; // intervals from 1 to 4 minutes
   }
 
-  /* You can print the variables on the Serial Monitor if you want to
+  // You can print the variables on the Serial Monitor if you want to
   Serial.print("timerOption = ");
   Serial.println(timerOption);
   Serial.print("timerInterval = ");
   Serial.println(timerInterval);
-  */
 }
 
 void loop() {
@@ -101,14 +99,13 @@ void loop() {
 
   if ((currentTimeMillis - previousTimeMillis) >= timerInterval) {
 
-    /* You can print the variables on the Serial Monitor if you want to
+    // You can print the variables on the Serial Monitor if you want to
     Serial.print("currentTimeMillis = ");
     Serial.print(currentTimeMillis);
     Serial.print(" previousTimeMillis = ");
     Serial.println(previousTimeMillis);
     Serial.print("LEDno = ");
     Serial.println(LEDno);
-    */
 
     // save the last time you changed a colored LED
     previousTimeMillis = previousTimeMillis + timerInterval;

@@ -2,6 +2,7 @@
 Here is one possible solution to this project challenge
 
 ## Fritzing Diagram
+<i>[(Click here for full size image)](109-Blink-Without-Delay_bb.png)</i><br>
 <img src="109-Blink-Without-Delay_bb.png" height="300">
 
 ## Code

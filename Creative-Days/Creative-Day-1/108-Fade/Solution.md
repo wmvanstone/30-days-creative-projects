@@ -2,6 +2,7 @@
 Here is one possible solution to this project challenge
 
 ## Fritzing Diagram
+<i>[(Click here for full size image)](108-Fade_bb.png)</i><br>
 <img src="108-Fade_bb.png" height="300">
 
 ## Code
